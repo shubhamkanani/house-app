@@ -4,6 +4,8 @@ import styles from "./House.module.css";
 import Loader from "../Loader/Loader";
 import HouseCard from "./components/HouseCard/HouseCard";
 
+const endPoint = process.env.REACT_APP_API_BASE_URL;
+
 const Houses = () => {
   const [loading, setLoading] = useState(false);
   const [houses, setHouses] = useState([]);
@@ -15,7 +17,10 @@ const Houses = () => {
   const fetchHouse = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(process.env.REACT_APP_API_BASE_URL);
+      const url = endPoint.includes("houses")
+        ? endPoint
+        : `${process.env.REACT_APP_API_BASE_URL}/houses`;
+      const res = await axios.get(url);
       setLoading(false);
       setHouses(res?.data);
     } catch (error) {

@@ -35,3 +35,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - `src/App.js`: Main component rendering the title and List of House.
 - `src/App.css`: Styles for the components.
 - `public/index.html`: HTML template for the app.
+
+## Enviroment Variable
+
+Create .env on root and add variable like this for API call.
+```bash
+REACT_APP_API_BASE_URL=<Enter API end Point here>
