@@ -1,0 +1,29 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    -webkit-box-shadow: 0px 1px 5px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 5px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 5px -3px rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gradientLine {
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #fff, #000);
+}
+
+.founderName {
+    font-weight: 600;
+}

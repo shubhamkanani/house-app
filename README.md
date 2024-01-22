@@ -6,7 +6,7 @@ This is a simple React application that fetches and displays data about wizard h
 1. Clone this repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/shubhamkanani/house-app.git
    cd house-app
    ```
 
@@ -31,7 +31,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Project Structure
 
-- `src/HouseList.js`: Component fetching and displaying wizard house data.
-- `src/App.js`: Main component rendering the title and HouseList.
+- `src/components/House.js`: Component fetching and displaying house data.
+- `src/App.js`: Main component rendering the title and List of House.
 - `src/App.css`: Styles for the components.
 - `public/index.html`: HTML template for the app.
